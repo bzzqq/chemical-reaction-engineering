@@ -1,0 +1,6 @@
+\beamer@sectionintoc {1}{2.3 温度对反应速率的影响}{3}{0}{1}
+\beamer@sectionintoc {2}{2.4 复合反应}{13}{0}{2}
+\beamer@sectionintoc {3}{2.5 反应速率方程的变换与积分}{24}{0}{3}
+\beamer@sectionintoc {4}{2.6 多相催化与吸附}{25}{0}{4}
+\beamer@sectionintoc {5}{2.7 多相催化反应动力学}{26}{0}{5}
+\beamer@sectionintoc {6}{2.8 动力学参数的确定}{27}{0}{6}

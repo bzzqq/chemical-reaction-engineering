@@ -1,0 +1,64 @@
+\documentclass[aspectratio=169,12pt,t]{beamer}
+\usetheme{default}
+\usecolortheme{seahorse}
+\usepackage[UTF8]{ctex}
+\usepackage[version=4]{mhchem} %化学公式宏包
+\usepackage{siunitx} %数字，单位宏包
+
+%\setbeamertemplate{background}{\includegraphics[height=\paperheight]{bg.pdf}}
+\setbeamertemplate{navigation symbols}{}   %取消导航条
+\setbeamertemplate{footline}[frame number]    %页码
+\setbeamerfont{frametitle}{size=\fontsize{16}{20}}  %标题
+\setbeamerfont{framesubtitle}{size=\fontsize{10}{12}}  %副标题
+\setlength{\parindent}{2em}      %段落缩进2字符
+\linespread{1.2}
+
+%---------------------突出本章标题--------------------------------------------
+\AtBeginSection[]
+{
+	\begin{frame}{目录}
+		\transfade%淡入淡出效果
+		\tableofcontents[sectionstyle=show/shaded] %这几个参数我也不知道该如何准确地解释，反正它们最终的效果是突出显示当前章节，而其它章节都进行了淡化处理
+		\addtocounter{framenumber}{-1}  %目录页不计算页码
+	\end{frame}
+}
+%-------------------字体----------------------------------------------
+
+\usefonttheme{serif}
+\setmainfont{Times New Roman}
+\usepackage{amsmath}
+\usepackage{unicode-math}
+\setmathfont{XITS Math}
+
+%------------------封面-----------------------------------------------
+\title{化学反应工程}
+\subtitle{Chemical Reaction Engineering}
+\author{张斌}
+\institute[河北农业大学 理工系]{河北农业大学 理工系}
+\date{\today}
+%-----------------------------------------------------------------
+\begin{document}
+
+	%----------------------封面----------------------------------------
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	%----------------------目录-------------------------------------------
+	\begin{frame}
+		\frametitle{目录}
+		\tableofcontents
+	\end{frame}
+
+
+
+\input{contents/2.3.tex}
+\input{contents/2.4.tex}
+\input{contents/2.5.tex}
+\input{contents/2.6.tex}
+\input{contents/2.7.tex}
+\input{contents/2.8.tex}
+
+
+
+
+\end{document}
